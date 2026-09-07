@@ -11,3 +11,18 @@ A proposta consiste em comparar diferentes abordagens de Inteligência Artificia
 * **Modelo Híbrido:** combina as duas estratégias. O Algoritmo Genético realiza uma busca inicial para obter uma configuração próxima da solução, enquanto o Backtracking é utilizado posteriormente para refinar a busca e encontrar a solução exata.
 
 Essa comparação permite observar, na prática, as diferenças entre uma busca determinística e exata, uma abordagem estocástica baseada em população e uma estratégia que combina ambas. O objetivo principal é estudar como diferentes técnicas de Inteligência Artificial podem ser aplicadas a um problema de satisfação de restrições (CSP), avaliando aspectos como correção, tempo de execução, número de gerações e qualidade das soluções encontradas.
+
+## Organização do Projeto
+
+O projeto está organizado em diferentes arquivos Python, cada um responsável por uma parte da implementação:
+
+* **`generator.py`** — responsável pela geração das instâncias utilizadas nos testes do Nonograma.
+
+* **`main.py`** — contém a execução principal do programa, permitindo selecionar e executar os métodos de resolução.
+
+* **`metodos.py`** — reúne a implementação dos algoritmos utilizados para resolver o Nonograma, incluindo **Backtracking**, **Algoritmo Genético** e **Modelo Híbrido**.
+
+* **`metricas.py`** — responsável pelo cálculo e apresentação das métricas utilizadas para comparar os métodos, como tempo de execução, número de gerações e qualidade das soluções.
+
+* **`tabuleiro.py`** — contém a estrutura do tabuleiro e as operações necessárias para representar e manipular o Nonograma.
+
